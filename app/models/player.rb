@@ -1,2 +1,4 @@
 class Player < ApplicationRecord
-end
+    has_many :resources, dependent: :destroy
+  end
+  
